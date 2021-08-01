@@ -1,0 +1,10 @@
+.file-list {
+  counter-reset: section;
+}
+
+.file-list-index::before {
+  display: inline-block;
+  counter-increment: section;
+  content: counter(section);
+  margin-left: 8px;
+}

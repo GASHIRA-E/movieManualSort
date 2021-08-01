@@ -1,0 +1,17 @@
+{
+  "name": "file-names",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "description": "file name",
+  "author": "GASHIRA-E",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^13.1.7"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}

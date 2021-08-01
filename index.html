@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="src/public/tailwind.css">
+  <link rel="stylesheet" href="src/public/item-list.css">
+  <title>Hello World!</title>
+</head>
+
+<body class="bg-gray-200">
+  <div class="mx4">
+    <button
+      class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+      id="file-open-event">
+      フォルダを指定する
+    </button>
+  </div>
+
+  <ol class="mx-4 file-list" id="js-file-list">
+    <li class="flex">
+      <div class="w-1/2">ファイル名</div>
+      <div class="flex ml-4">
+        <p>開始サムネ</p>
+        <p class="ml-2">終了サムネ</p>
+      </div>
+    </li>
+    <!-- <li class="flex border-2 border-gray-500 rounded bg-blue-100 js-file cursor-move" draggable="true">
+      <div class="flex w-1/2 items-center file-list-index">
+        <p class="break-all align-middle ml-2">
+          /Users/gashira/Movies/tmp/07:23/2018_0101_000016_007.MP4
+        </p>
+      </div>
+      <div class="flex ml-4">
+        <img class="max-h-24"
+          src="/Users/gashira/Library/Application Support/file-names/Users/gashira/Movies/tmp/07:23/2018_0101_000016_007.MP4/tn_1.png"
+          alt="">
+        <img class="max-h-24 ml-2"
+          src="/Users/gashira/Library/Application Support/file-names/Users/gashira/Movies/tmp/07:23/2018_0101_000016_007.MP4/tn_2.png"
+          alt="">
+      </div>
+    </li> -->
+  </ol>
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
